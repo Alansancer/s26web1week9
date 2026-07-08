@@ -47,6 +47,14 @@ table {
 	border-spacing: 0;
 }
 
+
+/*** clear fix ***/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /****************************************************
         MOBILE STYLES
 ****************************************************/
@@ -117,7 +125,7 @@ img{
     }
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width:968px){
     /* the CSS in this media query will only apply to your site when the size of the
     screen is 768px wide or greater - since this is after the 600px media query,
     styles inside here will override it */
@@ -128,10 +136,26 @@ img{
 
     .container{
         width:100%;
-        max-width:800px;
+        max-width:1000px;
         margin:0 auto;
         background:white;
         /* this will center the container div in the browser window when
-        the screen is wider than 800px */
+        the screen is wider than 1000px */
+    }
+
+    /* switch to a more horizontal layout for the larger size */
+    main{
+        width:75%;
+        float:left;
+    }
+
+    aside{
+        width:25%;
+        float:left;
+    }
+
+    footer{
+        clear:both;
+        /* this tells the footer to see the floated elements and go below them */
     }
 }
