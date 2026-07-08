@@ -51,6 +51,12 @@ table {
         MOBILE STYLES
 ****************************************************/
 
+.container{
+    padding:0 0.5em;
+    /* you never want anything right up against the edge of the screen, so a small
+    amount of padding on the left and right helps leave a bit of whitespace */
+}
+
 h1{
     font-size:30px;
 }
