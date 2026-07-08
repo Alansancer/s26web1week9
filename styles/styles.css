@@ -78,3 +78,7 @@ nav ul a{
 nav ul a:active{
     background-color:rgb(133, 168, 192);
 }
+
+img{
+    max-width:100%;
+}
